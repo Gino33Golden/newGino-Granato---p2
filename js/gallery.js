@@ -160,7 +160,7 @@ function GalleryImage() {
   var data;
 
   var img;
-};
+}
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
 	//2. description of photo
