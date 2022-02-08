@@ -71,7 +71,6 @@ function toggleDetails()
 // Counter for the mImages array
 
 var mCurrentIndex = 0;
-
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 
