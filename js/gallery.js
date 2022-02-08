@@ -75,21 +75,16 @@ var mCurrentIndex = 0;
 var mRequest = new XMLHttpRequest();
 
 // Array holding GalleryImage objects (see below).
+
+var mJson;
+
+
 var mImages = [
-  function iterateJSON(mJson) {
-    for (x = 0; x < mJson.images.length; x++)
-    {
-  mImages[x] = new GalleryImage();
-  mImages[x].location = mJson.images[x].imgLocation;
-  mImages[x].description = mJson.images[x].description;
-  mImages[x].data = mJson.images[x].data;
-  mImages[x].img = mJson.images[x].imgPath;
-}
-}
+
 ];
 
 // Holds the retrived JSON information
-var mJson;
+
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
@@ -140,6 +135,18 @@ $(document).ready( function() {
   }
 
   });
+
+  function iterateJSON(mJson) {
+    for (x = 0; x < mJson.images.length; x++)
+    {
+  mImages[x] = new GalleryImage();
+  mImages[x].location = mJson.images[x].imgLocation;
+  mImages[x].description = mJson.images[x].description;
+  mImages[x].data = mJson.images[x].data;
+  mImages[x].img = mJson.images[x].imgPath;
+}
+}
+
 
 window.addEventListener('load', function() {
 
