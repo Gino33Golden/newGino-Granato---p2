@@ -126,7 +126,6 @@ $(document).ready( function() {
     at: "right bottom",
     of: "#nav"
   });
-
   const urlParams = new URLSearchParams(window.location.search);
 
   for (const [key, value] of urlParams){
