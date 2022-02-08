@@ -125,9 +125,6 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 
 $(document).ready( function() {
 
-
-	// This initially hides the photos' metadata information
-	//$('.details').eq(0).hide();
   $( "#nextPhoto" ).position({
     my: "right bottom",
     at: "right bottom",
@@ -146,7 +143,8 @@ $(document).ready( function() {
   }
 
 
-
+	//$('.details').eq(0).hide();
+  
 window.addEventListener('load', function() {
 
 	console.log('window loaded');
