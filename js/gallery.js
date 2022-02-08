@@ -69,20 +69,15 @@ function toggleDetails()
   $( ".details" ).slideToggle("slow", "linear" );
 }
 // Counter for the mImages array
-var mCurrentIndex = 0;
 
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 
 // Array holding GalleryImage objects (see below).
 
+var mImages = [];
+
 var mJson;
-
-
-var mImages = [
-
-];
-
 // Holds the retrived JSON information
 
 
