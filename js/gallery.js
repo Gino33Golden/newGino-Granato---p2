@@ -66,7 +66,7 @@ function toggleDetails()
     $( ".moreIndicator" ).removeClass("rot270");
     $(".moreIndicator").addClass("rot90");
   }
-  $( ".details" ).slideToggle("slow", "linear" );
+  $( ".details" ).slideToggle( "slow", "linear" );
 }
 // Counter for the mImages array
 
@@ -126,7 +126,7 @@ $(document).ready( function() {
     at: "right bottom",
     of: "#nav"
   });
-
+}
   const urlParams = new URLSearchParams(window.location.search);
 
   for (const [key, value] of urlParams){
@@ -162,4 +162,3 @@ function GalleryImage() {
 	//2. description of photo
 	//3. the date when the photo was taken
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
-}
