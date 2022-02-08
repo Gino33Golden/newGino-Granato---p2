@@ -142,9 +142,10 @@ $(document).ready( function() {
     mUrl = 'images.json';
   }
 
+fetchJSON();
 
 	//$('.details').eq(0).hide();
-  
+
 window.addEventListener('load', function() {
 
 	console.log('window loaded');
