@@ -105,7 +105,7 @@ function iterateJSON(mJson) {
 mImages[x] = new GalleryImage();
 mImages[x].location = mJson.images[x].imgLocation;
 mImages[x].description = mJson.images[x].description;
-mImages[x].data = mJson.images[x].data;
+mImages[x].date = mJson.images[x].date;
 mImages[x].img = mJson.images[x].imgPath;
 }
 }
@@ -152,7 +152,7 @@ function GalleryImage() {
 
   var description;
 
-  var data;
+  var date;
 
   var img;
 }
