@@ -95,7 +95,7 @@ function fetchJSON(){
       iterateJSON(mJson);
     }
   }
-  mRequest.open('GET', mURL, true);
+  mRequest.open('GET', mUrl, true);
   mRequest.send();
 }
 
